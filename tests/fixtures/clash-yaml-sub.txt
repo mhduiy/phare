@@ -1,0 +1,16 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+external-controller: '127.0.0.1:9090'
+dns:
+    enable: true
+proxies:
+    - { name: '剩余流量：100 GB', type: vless, server: info.example, port: 443, uuid: u-1, udp: true }
+    - { name: 🇭🇰 香港01, server: hk.example, port: 20000, ports: 20000-50000, udp: true, sni: www.bing.com, type: hysteria2, password: pw }
+    - { name: 🇯🇵 日本01, type: trojan, server: jp.example, port: 54357, password: pw, udp: true, sni: www.bing.com }
+    - { name: 🇺🇸 美国01, type: vless, server: us.example, port: 50131, uuid: u-2, tls: true, servername: d1.awsstatic.com }
+proxy-groups:
+    - { name: 机场自带, type: select, proxies: [🇭🇰 香港01, 🇯🇵 日本01, 🇺🇸 美国01] }
+rules:
+    - 'MATCH,机场自带'

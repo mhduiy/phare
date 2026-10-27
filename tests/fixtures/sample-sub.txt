@@ -1,0 +1,4 @@
+vless://11111111-2222-3333-4444-555555555555@node.test.example:443?type=ws&encryption=none&host=cdn.test.example&path=%2Fws%2Fa&security=tls&sni=cdn.test.example&fp=chrome#%E6%B5%8B%E8%AF%95%E8%8A%82%E7%82%B901
+vless://11111111-2222-3333-4444-555555555555@reality.test.example:443?type=tcp&encryption=none&security=reality&flow=xtls-rprx-vision&fp=chrome&sni=www.apple.com&pbk=PUBKEYPUBKEYPUBKEYPUBKEYPUBKEYPUBKEYPUBKEY0&sid=abcd1234#%E6%B5%8B%E8%AF%95%E8%8A%82%E7%82%B902
+hysteria2://pass-test-123@hy2.test.example:35000/?insecure=false&sni=www.apple.com&mport=35000-39000#%E6%B5%8B%E8%AF%95%E8%8A%82%E7%82%B903
+trojan://pw-test@trojan.test.example:443?sni=trojan.test.example&type=ws&path=%2Ftr#%E6%B5%8B%E8%AF%95%E8%8A%82%E7%82%B904

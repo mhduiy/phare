@@ -1,0 +1,3 @@
+/target/
+# phare 运行时产物（内核配置副本等），不入库
+/config.yaml

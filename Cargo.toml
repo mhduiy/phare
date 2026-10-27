@@ -1,0 +1,12 @@
+[package]
+name = "phare"
+version = "0.1.0"
+edition = "2021"
+description = "A tiny profile manager (multi-subscription) for the mihomo proxy core"
+
+[[bin]]
+name = "phare"
+path = "src/main.rs"
+
+[dependencies]
+# 只用标准库实现：HTTP 走原生 TLS 由系统 curl 兜底，避免编译期依赖外部 crate。
